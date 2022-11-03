@@ -1,23 +1,41 @@
 <template>
-  <div class="landing-wrapper">
+  <div
+    class="landing-wrapper"
+    :style="{ 'background-image': `url(${background})` }"
+  >
     <div class="landing-content">
-      <div class="landing-header">Hi, I'm Phindi</div>
-      <div class="landing-desc">A Junior Software Engineer</div>
+      <div class="landing-header">{{ header }}</div>
+      <div class="landing-desc">{{ desc }}</div>
     </div>
   </div>
-  <ProfileView />
-  <ProjectsView />
+  <ProfileView :profile-config="store.config.profileView" />
+  <ProjectsView :project-view="store.config.projectsView" />
 </template>
 
 <script setup>
-import ProjectsView from './ProjectsView.vue'
-import ProfileView from './ProfileView.vue';
+import ProjectsView from "./ProjectsView.vue";
+import ProfileView from "./ProfileView.vue";
+import { useStore } from "../stores/profile";
+import { computed } from "vue";
+
+const store = useStore();
+
+const header = computed(() => {
+  return store.config.landingView.header;
+});
+
+const desc = computed(() => {
+  return store.config.landingView.desc;
+});
+
+const background = computed(() => {
+  return store.config.landingView.backgroundImg;
+});
 </script>
 
 <style scoped>
 .landing-wrapper {
   height: 100%;
-  background-image: url("../assets/desk-top.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

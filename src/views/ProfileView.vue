@@ -1,21 +1,20 @@
 <template>
   <div class="profile-view-wrapper">
     <div class="profile-view-img">
-      <img src="../assets/propic.jpeg" alt="Profile Picture" />
+      <img :src="profileConfig.profileImg" alt="Profile Picture" />
     </div>
     <div class="profile-view-content">
-      <div class="profile-view-title">A little about me</div>
-      <span class="profile-view-desc"
-        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-        natus, dolor hic magnam voluptas tempore ea unde laboriosam illum
-        commodi, eum excepturi? Quo sunt quia nemo excepturi tempore minima
-        esse?</span
-      >
+      <div class="profile-view-title">{{ profileConfig.title }}</div>
+      <span class="profile-view-desc">{{ profileConfig.desc }}</span>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+defineProps({
+  profileConfig: Object,
+});
+</script>
 
 <style scoped>
 .profile-view-wrapper {

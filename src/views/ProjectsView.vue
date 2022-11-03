@@ -1,17 +1,16 @@
 <template>
   <div class="project-view-wrapper">
-    <div class="project-view-title">Projects</div>
+    <div class="project-view-title">{{ projectView.title }}</div>
     <div class="project-view-items">
-      <ProjectItem :list="store.projectList" />
+      <ProjectItem :list="projectView.projectList" />
     </div>
   </div>
 </template>
 
 <script setup>
 import ProjectItem from "../components/ProjectItem.vue";
-import { useStore } from "../stores/profile";
 
-const store = useStore();
+defineProps({ projectView: Object });
 </script>
 
 <style scoped>

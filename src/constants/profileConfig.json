@@ -1,0 +1,20 @@
+{
+  "landingView": {
+    "header": "Hi, I'm Phindi",
+    "desc": "A Junior Software Engineer",
+    "backgroundImg": "src/assets/desk-top.jpg"
+  },
+  "profileView": {
+    "profileImg": "src/assets/propic.jpeg",
+    "title": "A little about me",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur natus, dolor hic magnam voluptas tempore ea unde laboriosam illum commodi, eum excepturi? Quo sunt quia nemo excepturi tempore minima esse?"
+  },
+  "projectsView": {
+    "title": "Projects",
+    "projectList": [
+      { "title": "Project One", "image": "src/assets/logo.svg" },
+      { "title": "Project Two", "image": "src/assets/logo.svg" },
+      { "title": "Project Three", "image": "src/assets/logo.svg" }
+    ]
+  }
+}
