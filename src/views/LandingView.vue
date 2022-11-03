@@ -5,11 +5,13 @@
       <div class="landing-desc">A Junior Software Engineer</div>
     </div>
   </div>
+  <ProfileView />
   <ProjectsView />
 </template>
 
 <script setup>
 import ProjectsView from './ProjectsView.vue'
+import ProfileView from './ProfileView.vue';
 </script>
 
 <style scoped>
