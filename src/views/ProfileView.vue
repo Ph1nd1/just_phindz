@@ -27,6 +27,7 @@ defineProps({
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .profile-view-title {
   font-size: 3rem;

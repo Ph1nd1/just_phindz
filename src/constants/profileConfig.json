@@ -7,14 +7,30 @@
   "profileView": {
     "profileImg": "src/assets/propic.jpeg",
     "title": "A little about me",
-    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur natus, dolor hic magnam voluptas tempore ea unde laboriosam illum commodi, eum excepturi? Quo sunt quia nemo excepturi tempore minima esse?"
+    "desc": "A passionate software developer with a focus on front-end development. I have a history of working on performant scalable applications. I'm eager to tackle new challenges, enhance my skills, and contribute to my growth and that  of the organization."
   },
   "projectsView": {
     "title": "Projects",
     "projectList": [
-      { "title": "Project One", "image": "src/assets/logo.svg" },
-      { "title": "Project Two", "image": "src/assets/logo.svg" },
-      { "title": "Project Three", "image": "src/assets/logo.svg" }
+      {
+        "title": "Express.js Form",
+        "image": "src/assets/projects/express.png"
+      },
+      { "title": "Memory Game", "image": "src/assets/projects/mem-game.png" },
+      {
+        "title": "Semi-tone Game",
+        "image": "src/assets/projects/semi-tone.png"
+      },
+      {
+        "title": "Star Lord Phaser Game",
+        "image": "src/assets/projects/star-lord.png",
+        "link": "https://razeenb.itch.io/starlord"
+      },
+      {
+        "title": "Giving Needs app",
+        "image": "src/assets/projects/giving-needs.png",
+        "link": "https://my-app-lilac.vercel.app/"
+      }
     ]
   }
 }
